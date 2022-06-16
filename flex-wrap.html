@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 3px solid black;
+            max-width: 300px;
+        }
+        .item{
+            font-size: 20px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .color1{
+            background-color: blueviolet;
+        }
+        .color2{
+            background-color: yellow;
+        }
+        .color3{
+            background-color: olivedrab;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- NOWRAP Padrão não permite a quebra de linha, deixa vazando -->
+    <h1>No wrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item color1">1</div>
+        <div class="item color2">2</div>
+        <div class="item color3">3</div>
+        <div class="item color1">4</div>
+    </div>
+     <!--WRAP DEFINE OU NÃO SE QUEBRA A LINHA-->
+    <h1> wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item color3">1</div>
+        <div class="item color1">2</div>
+        <div class="item color2">3</div>
+        <div class="item color1">4</div>
+    </div>
+    <!--WRAP-REVERSE quebra de linha na posição contraria-->
+    <h1> wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item color3">1</div>
+        <div class="item color1">2</div>
+        <div class="item color2">3</div>
+        <div class="item color1">4</div>
+    </div>
+    
+</body>
+</html>
