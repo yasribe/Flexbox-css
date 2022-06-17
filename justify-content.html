@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+    <style>
+        .container{
+            max-width: 400px;
+            border: 2px solid black;
+            margin: 0;
+            display: flex;
+        }
+        .item{
+            background-color: brown;
+            margin: 5px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .Space-between{
+            justify-content: space-between;
+        }
+        .Space-around{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>flex start</h1>
+    <p>Alinhamento no começo ... Padrão</p>
+    <div class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>flex start</h1>
+    <p>Alinhamento no final</p>
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>center</h1>
+    <p>Alinhamento centralizado</p>
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>Space-between</h1>
+    <p>Distribuição uniforme proporcional para cada elemento</p>
+    <div class="container Space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>Space-around</h1>
+    <p>espaçamento do meio maior que do inicial e final</p>
+    <div class="container Space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>Flex Start Column</h1>
+    <p>oculpa 100% do espaço e alinhamento em coluna</p>
+    <div class="container Flex-start column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>Flex end Column</h1>
+    <p>oculpa 100% do espaço e alinhamento em coluna mas na parte final</p>
+    <div class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>center Column</h1>
+    <p>oculpa 100% do espaço e alinhamento em coluna mas centralizado</p>
+    <div class="container center column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>Space-between column</h1>
+    <p>Distribuição uniforme proporcional para cada elemento em colunas</p>
+    <div class="container Space-between column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>Space-around column</h1>
+    <p>espaçamento do meio maior que do inicial e final em colunas</p>
+    <div class="container Space-around column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
