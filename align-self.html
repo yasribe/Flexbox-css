@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 3px solid brown;
+            max-width: 300px;
+           
+        }
+        .aling-container{
+             align-items: center;
+        }
+        .item{
+            background-color: black;
+            color: #fff;
+            font-size: 20px;
+            margin: 5px;
+            text-align: center;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .diretion{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>AUTO</h1>
+    <div class="container aling-container">
+        <div class="item auto">AAA</div>
+        <div class="item">ABC$</div>
+        <div class="item auto">123</div>
+        <div class="item auto">ola mundo como vai?</div>
+        <div class="item auto">item 7</div>
+    </div>
+    <h1>start</h1>
+    <div class="container ">
+        <div class="item  start">AAA</div>
+        <div class="item  start">ABC$</div>
+        <div class="item  start">123</div>
+        <div class="item  start">ola mundo como vai?</div>
+        <div class="item start">item 7</div>
+    </div>
+    <h1>END</h1>
+    <div class="container">
+        <div class="item end">AAA</div>
+        <div class="item end">ABC$</div>
+        <div class="item end">123</div>
+        <div class="item end">ola mundo como vai?</div>
+        <div class="item end">item 7</div>
+    </div>
+    <h1>baseline</h1>
+    <div class="container">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">ABC$</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">ola mundo como vai?</div>
+        <div class="item baseline">item 7</div>
+    </div>
+    <h1>stretch</h1>
+    <div class="container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">ABC$</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">ola mundo como vai?</div>
+        <div class="item stretch">item 7</div>
+    </div>
+    <h1>mix</h1>
+    <div class="container">
+        <div class="item center">AAA</div>
+        <div class="item stretch">ABC$</div>
+        <div class="item start">123</div>
+        <div class="item baseline">ola mundo como vai?</div>
+        <div class="item end">007</div>
+    </div>
+    <h1>mix COLUMN</h1>
+    <div class="container diretion">
+        <div class="item center">AAA</div>
+        <div class="item stretch">ABC$</div>
+        <div class="item start">123</div>
+        <div class="item baseline">ola mundo como vai?</div>
+        <div class="item end">007</div>
+    </div>
+</body>
+</html>
